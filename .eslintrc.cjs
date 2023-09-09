@@ -15,6 +15,7 @@ module.exports = {
   ],
   plugins: ['prettier'],
   settings: {
+    'import/ignore': ['react-native'],
     react: {
       version: 'detect'
     },
