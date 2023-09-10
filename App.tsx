@@ -1,21 +1,25 @@
 import { StatusBar } from 'expo-status-bar'
-import { useState } from 'react'
-import { Text, View } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import HomeScreen from './screens/Home'
+import { NativeWindStyleSheet } from 'nativewind'
 
-interface IState {
-  name: string
-  age: string
-}
+NativeWindStyleSheet.setOutput({
+  default: 'native'
+})
+
+const Stack = createNativeStackNavigator()
 export default function App() {
-  const [info, setInfo] = useState<IState>({
-    name: 'ne trung',
-    age: '10'
-  })
-
   return (
-    <View className='flex-1 bg-white items-center justify-center'>
-      <Text className='text-red-700 font-semibold text-xl'>{info.name}</Text>
-      <StatusBar style='auto' />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false
+        }}
+      >
+        <Stack.Screen name='Home' component={HomeScreen} />
+      </Stack.Navigator>
+      <StatusBar />
+    </NavigationContainer>
   )
 }
