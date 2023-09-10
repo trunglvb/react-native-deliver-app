@@ -39,7 +39,7 @@ const HomeScreen = () => {
       </View>
       {/* Body */}
       <ScrollView className='bg-gray-200 '>
-        <Categories></Categories>
+        <Categories />
       </ScrollView>
     </SafeAreaView>
   )
