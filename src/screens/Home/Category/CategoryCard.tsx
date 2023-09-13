@@ -1,6 +1,6 @@
 //import liraries
 import React from 'react'
-import { View, Text, TouchableOpacity, Image } from 'react-native'
+import { Text, TouchableOpacity, Image } from 'react-native'
 
 interface ICategoryCardProps {
   imgUrl: string
@@ -9,14 +9,14 @@ interface ICategoryCardProps {
 const CategoryCard = (props: ICategoryCardProps) => {
   const { imgUrl, title } = props
   return (
-    <TouchableOpacity>
+    <TouchableOpacity className='relative'>
       <Image
         source={{
           uri: imgUrl
         }}
         className='h-20 w-20 rounded'
       />
-      <Text>{title}</Text>
+      <Text className='absolute bottom-1 left-1 text-white font-semibold'>{title}</Text>
     </TouchableOpacity>
   )
 }

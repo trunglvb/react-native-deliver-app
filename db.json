@@ -1,0 +1,73 @@
+{
+  "category": [
+    {
+      "id": "i1",
+      "imgUrl": "https://www.odtap.com/wp-content/uploads/2018/10/food-delivery.jpg",
+      "title": "Food"
+    },
+    {
+      "id": "i2",
+      "imgUrl": "https://english.onlinekhabar.com/wp-content/uploads/2021/03/food-delivery-5217579__340.png",
+      "title": "Food"
+    },
+    {
+      "id": "i3",
+      "imgUrl": "https://caymanrestaurant.files.wordpress.com/2021/04/food-delivery.jpeg",
+      "title": "Food"
+    },
+    {
+      "id": "i4",
+      "imgUrl": "https://img.freepik.com/free-vector/delivery-service-illustrated_23-2148505081.jpg?w=2000",
+      "title": "Food"
+    },
+    {
+      "id": "i5",
+      "imgUrl": "https://img.freepik.com/premium-vector/food-delivery-service-fast-food-delivery-scooter-delivery-service-illustration_67394-869.jpg?w=2000",
+      "title": "Food"
+    },
+    {
+      "id": "i6",
+      "imgUrl": "https://cdn3.vectorstock.com/i/1000x1000/28/82/food-delivery-vector-6252882.jpg",
+      "title": "Food"
+    },
+    {
+      "id": "i7",
+      "imgUrl": "https://www.elluminatiinc.com/wp-content/uploads/2020/07/blog/fooddeliveryinsoutheastasia.jpg",
+      "title": "Food"
+    }
+  ],
+  "featured": [
+    {
+      "id": 1,
+      "imgUrl": "https://wallpaperaccess.com/full/1611351.jpg",
+      "title": "Yo! KFC",
+      "ratring": 4.5,
+      "genre": "Japanese",
+      "address": "123 Main St"
+    },
+    {
+      "id": 2,
+      "imgUrl": "https://mandc-bl-assets.s3.amazonaws.com/live/meadowhall/2023/03/12124508/wagamama.jpg",
+      "title": "Wagamgama",
+      "ratring": 4.5,
+      "genre": "Korea",
+      "address": "123 Main St"
+    },
+    {
+      "id": 3,
+      "imgUrl": "https://c4.wallpaperflare.com/wallpaper/124/52/871/kfc-wallpaper-preview.jpg",
+      "title": "Yo! Pho",
+      "ratring": 4.5,
+      "genre": "VietNam",
+      "address": "123 Main St"
+    },
+    {
+      "id": 4,
+      "imgUrl": "https://e1.pxfuel.com/desktop-wallpaper/249/258/desktop-wallpaper-kfc-introduces-donut-and-fried-chicken-sandwich-twitter-reacts-accordingly-kfc-logo.jpg",
+      "title": "Yo! Pho",
+      "ratring": 4.5,
+      "genre": "VietNam",
+      "address": "123 Main St"
+    }
+  ]
+}
