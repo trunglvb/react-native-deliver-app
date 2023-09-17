@@ -61,11 +61,16 @@ const Featured = (props: IFeaturedProps) => {
           featuredList?.map((item: IFeatured) => (
             <FeaturedCard
               key={item.id}
+              id={item.id}
               imgUrl={item.imgUrl}
               title={item.title}
               ratring={item.ratring}
               genre={item.genre}
               address={item.address}
+              dishes={item.dishes}
+              shortDescription={item.shortDescription}
+              long={item.long}
+              lat={item.lat}
             />
           ))
         )}

@@ -4,10 +4,14 @@ export interface ICategory {
   id: string
 }
 export interface IFeatured {
-  id: number
+  id?: number
   imgUrl: string
   title: string
   ratring: number
   genre: string
   address: string
+  shortDescription?: string
+  dishes?: string[]
+  long?: number
+  lat?: number
 }

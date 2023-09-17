@@ -1,10 +1,12 @@
 //import liraries
+import { ParamListBase, useNavigation } from '@react-navigation/native'
 import React from 'react'
 import { View, Text, TouchableOpacity, Image } from 'react-native'
 import { StarIcon, MapPinIcon } from 'react-native-heroicons/solid'
+import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 
 type IFeaturedCardProps = {
-  id?: string
+  id?: number
   imgUrl: string
   title: string
   ratring: number
@@ -15,10 +17,28 @@ type IFeaturedCardProps = {
   long?: number
   lat?: number
 }
+
 const FeaturedCard = (props: IFeaturedCardProps) => {
-  const { imgUrl, title, ratring, genre, address } = props
+  const { id, dishes, shortDescription, long, lat, imgUrl, title, ratring, genre, address } = props
+  const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>()
   return (
-    <TouchableOpacity className='rounded'>
+    <TouchableOpacity
+      className='rounded'
+      onPress={() => {
+        navigation.navigate('Restaurant', {
+          id,
+          imgUrl,
+          title,
+          ratring,
+          genre,
+          address,
+          shortDescription,
+          dishes,
+          long,
+          lat
+        })
+      }}
+    >
       <Image
         source={{
           uri: imgUrl

@@ -39,7 +39,7 @@ const HomeScreen = () => {
       </View>
       {/* Body */}
       <ScrollView
-        className='bg-gray-1h00'
+        className='bg-gray-100'
         contentContainerStyle={{
           paddingBottom: 150
         }}
