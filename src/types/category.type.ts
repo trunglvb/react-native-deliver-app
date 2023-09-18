@@ -3,15 +3,3 @@ export interface ICategory {
   title: string
   id: string
 }
-export interface IFeatured {
-  id?: number
-  imgUrl: string
-  title: string
-  ratring: number
-  genre: string
-  address: string
-  shortDescription?: string
-  dishes?: string[]
-  long?: number
-  lat?: number
-}

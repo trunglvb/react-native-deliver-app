@@ -41,33 +41,213 @@
       "id": 1,
       "imgUrl": "https://wallpaperaccess.com/full/1611351.jpg",
       "title": "Yo! KFC",
-      "ratring": 4.5,
+      "rating": 4.5,
       "genre": "Japanese",
-      "address": "123 Main St"
+      "address": "123 Main St",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "dishes": [
+        {
+          "id": 41,
+          "name": "PERI_Nuts",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 42,
+          "name": "3 Chicken Wing",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 43,
+          "name": "Family Flatter",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 44,
+          "name": "Chicked Butterfly",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 45,
+          "name": "Chicked Butterfly",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 46,
+          "name": "Quino-A",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        }
+      ]
     },
     {
       "id": 2,
       "imgUrl": "https://mandc-bl-assets.s3.amazonaws.com/live/meadowhall/2023/03/12124508/wagamama.jpg",
       "title": "Wagamgama",
-      "ratring": 4.5,
+      "rating": 4.5,
       "genre": "Korea",
-      "address": "123 Main St"
+      "address": "123 Main St",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "dishes": [
+        {
+          "id": 11,
+          "name": "PERI_Nuts",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 12,
+          "name": "3 Chicken Wing",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 13,
+          "name": "Family Flatter",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 14,
+          "name": "Chicked Butterfly",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 15,
+          "name": "Chicked Butterfly",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 16,
+          "name": "Quino-A",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        }
+      ]
     },
     {
       "id": 3,
       "imgUrl": "https://c4.wallpaperflare.com/wallpaper/124/52/871/kfc-wallpaper-preview.jpg",
       "title": "Yo! Pho",
-      "ratring": 4.5,
+      "rating": 4.5,
       "genre": "VietNam",
-      "address": "123 Main St"
+      "address": "123 Main St",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "dishes": [
+        {
+          "id": 21,
+          "name": "PERI_Nuts",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 22,
+          "name": "3 Chicken Wing",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 23,
+          "name": "Family Flatter",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 24,
+          "name": "Chicked Butterfly",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 25,
+          "name": "Chicked Butterfly",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 26,
+          "name": "Quino-A",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        }
+      ]
     },
     {
       "id": 4,
       "imgUrl": "https://e1.pxfuel.com/desktop-wallpaper/249/258/desktop-wallpaper-kfc-introduces-donut-and-fried-chicken-sandwich-twitter-reacts-accordingly-kfc-logo.jpg",
       "title": "Yo! Pho",
-      "ratring": 4.5,
+      "rating": 4.5,
       "genre": "VietNam",
-      "address": "123 Main St"
+      "address": "123 Main St",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "dishes": [
+        {
+          "id": 31,
+          "name": "PERI_Nuts",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 32,
+          "name": "3 Chicken Wing",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 33,
+          "name": "Family Flatter",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 34,
+          "name": "Chicked Butterfly",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 35,
+          "name": "Chicked Butterfly",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        },
+        {
+          "id": 36,
+          "name": "Quino-A",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "price": "",
+          "image": ""
+        }
+      ]
     }
   ]
 }

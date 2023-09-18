@@ -39,6 +39,7 @@ const Categories = () => {
         />
       ) : (
         <FlatList
+          showsHorizontalScrollIndicator={false}
           horizontal
           data={categoryList}
           renderItem={({ item }) => <CategoryCard imgUrl={item.imgUrl} title={item.title} key={item.id} />}

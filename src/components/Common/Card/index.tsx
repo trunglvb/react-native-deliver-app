@@ -4,22 +4,12 @@ import React from 'react'
 import { View, Text, TouchableOpacity, Image } from 'react-native'
 import { StarIcon, MapPinIcon } from 'react-native-heroicons/solid'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
+import { IFeatured } from '../../../types'
 
-type IFeaturedCardProps = {
-  id?: number
-  imgUrl: string
-  title: string
-  ratring: number
-  genre: string
-  address: string
-  shortDescription?: string
-  dishes?: string[]
-  long?: number
-  lat?: number
-}
+type IFeaturedCardProps = IFeatured
 
 const FeaturedCard = (props: IFeaturedCardProps) => {
-  const { id, dishes, shortDescription, long, lat, imgUrl, title, ratring, genre, address } = props
+  const { id, dishes, shortDescription, long, lat, imgUrl, title, rating, genre, address } = props
   const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>()
   return (
     <TouchableOpacity
@@ -29,7 +19,7 @@ const FeaturedCard = (props: IFeaturedCardProps) => {
           id,
           imgUrl,
           title,
-          ratring,
+          rating,
           genre,
           address,
           shortDescription,
@@ -50,7 +40,7 @@ const FeaturedCard = (props: IFeaturedCardProps) => {
         <View className='flex-row items-center gap-1'>
           <StarIcon color={'#2563eb'} opacity={0.5} size={22} />
           <Text className='text-xs text-gray-500'>
-            <Text className='text-[#2563eb]'> {ratring}</Text> . {genre}
+            <Text className='text-[#2563eb]'> {rating}</Text> . {genre}
           </Text>
         </View>
         <View className='flex-row items-center gap-2 '>

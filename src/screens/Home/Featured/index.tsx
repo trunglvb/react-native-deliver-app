@@ -1,13 +1,15 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 //import liraries
 import React, { useState, useEffect } from 'react'
-import { View, Text, ScrollView } from 'react-native'
+import { View, Text, ScrollView, Dimensions } from 'react-native'
 import { ArrowRightIcon } from 'react-native-heroicons/outline'
 import FeaturedCard from '../../../components/Common/Card'
 import { IFeatured } from '../../../types'
 import { getFeaturedList } from '../../../apis/category.api'
 import Shimmering from '../../../components/Common/Shimmering'
 
+const { width: screenWidth } = Dimensions.get('screen')
+const width = screenWidth - 32
 interface IFeaturedProps {
   title: string
   description: string
@@ -19,6 +21,7 @@ const Featured = (props: IFeaturedProps) => {
   const [isSubscribed, setIsSubcribed] = useState<boolean>(true)
 
   useEffect(() => {
+    setIsLoading(true)
     const fetchData = async () => {
       const response = await getFeaturedList()
       if (isSubscribed) {
@@ -33,7 +36,7 @@ const Featured = (props: IFeaturedProps) => {
   }, [])
 
   return (
-    <View className='px-4 mt-4'>
+    <View className='px-4 mt-4 w-full'>
       <View className='flex-row justify-between items-center'>
         <Text className='text-lg font-semibold'>{title}</Text>
         <ArrowRightIcon size={20} color={'#2563eb'} />
@@ -42,17 +45,16 @@ const Featured = (props: IFeaturedProps) => {
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
-        className='pt-4 '
+        className='pt-4'
         contentContainerStyle={{
-          gap: 8,
-          width: '100%'
+          gap: 8
         }}
       >
         {isLoading ? (
           <Shimmering
             wrapperStyle={{
               flex: 1,
-              width: '100%',
+              width: width,
               height: 180,
               borderRadius: 5
             }}
@@ -64,7 +66,7 @@ const Featured = (props: IFeaturedProps) => {
               id={item.id}
               imgUrl={item.imgUrl}
               title={item.title}
-              ratring={item.ratring}
+              rating={item.rating}
               genre={item.genre}
               address={item.address}
               dishes={item.dishes}
