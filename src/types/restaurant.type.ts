@@ -11,10 +11,12 @@ export interface IFeatured {
   lat?: number
 }
 
-export interface IDishes {
+export type IDishes = {
   id: number
   name: string
   description: string
-  price: string
+  price: number
   image: string
+  quantity?: number
+  totalPrice?: number
 }

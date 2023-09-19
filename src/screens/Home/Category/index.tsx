@@ -5,6 +5,7 @@ import CategoryCard from './CategoryCard'
 import { getCategoryList } from '../../../apis/category.api'
 import { ICategory } from '../../../types'
 import Shimmering from '../../../components/Common/Shimmering'
+import axios from 'axios'
 
 // const { width: screenWidth } = Dimensions.get('screen')
 // const width = screenWidth * 0.92 - 30
@@ -12,6 +13,7 @@ import Shimmering from '../../../components/Common/Shimmering'
 const Categories = () => {
   const [categoryList, setCategoryList] = useState<ICategory[]>([])
   const [isLoading, setIsLoading] = useState<boolean>(true)
+
   useEffect(() => {
     setIsLoading(true)
     getCategoryList().then((response) => {
