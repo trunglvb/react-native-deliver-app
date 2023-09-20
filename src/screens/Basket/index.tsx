@@ -1,5 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 //import liraries
-import React, { useMemo } from 'react'
+import React, { useEffect, useMemo } from 'react'
 import { View, Text, SafeAreaView, TouchableOpacity, Image, ScrollView } from 'react-native'
 import { ParamListBase, useNavigation } from '@react-navigation/native'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
@@ -8,7 +9,7 @@ import { useSelector } from 'react-redux'
 import { IDishes } from '../../types'
 import { XCircleIcon } from 'react-native-heroicons/solid'
 import Currency from 'react-currency-formatter'
-import { removeFromBasket } from '../../redux/reducer/basketSlice'
+import { removeFromBasket, resetBasketState } from '../../redux/reducer/basketSlice'
 
 const BasketScreen = () => {
   const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>()
@@ -104,7 +105,11 @@ const BasketScreen = () => {
               <Currency quantity={totalPrice + 5.99} currency='GBP' />
             </Text>
           </View>
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('PreparingOrder')
+            }}
+          >
             <View className='py-4 items-center bg-[#2563eb] rounded-md'>
               <Text className='font-semibold text-base text-white'>Place Order</Text>
             </View>

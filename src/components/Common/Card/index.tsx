@@ -1,9 +1,9 @@
 //import liraries
-import { ParamListBase, useNavigation } from '@react-navigation/native'
 import React from 'react'
+import { ParamListBase, useNavigation } from '@react-navigation/native'
+import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { View, Text, TouchableOpacity, Image } from 'react-native'
 import { StarIcon, MapPinIcon } from 'react-native-heroicons/solid'
-import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { IFeatured } from '../../../types'
 
 type IFeaturedCardProps = IFeatured

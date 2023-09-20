@@ -8,6 +8,8 @@ import { IFeatured } from './src/types'
 import { store } from './src/redux/store'
 import { Provider } from 'react-redux'
 import BasketScreen from './src/screens/Basket'
+import PreparingOrderScreen from './src/screens/PreparingOrder'
+import DeliveryScreen from './src/screens/Delivery'
 
 NativeWindStyleSheet.setOutput({
   default: 'native'
@@ -16,6 +18,8 @@ type RootStackParamList = {
   Home: undefined
   Restaurant: IFeatured
   Basket: undefined
+  PreparingOrder: undefined
+  Delivery: undefined
 }
 const Stack = createNativeStackNavigator<RootStackParamList>()
 export default function App() {
@@ -27,17 +31,29 @@ export default function App() {
             headerShown: false
           }}
         >
-          <Stack.Group>
-            <Stack.Screen name='Home' component={HomeScreen} />
-            <Stack.Screen name='Restaurant' component={RestaurantScreen} />
-          </Stack.Group>
-          <Stack.Group
-            screenOptions={{
+          <Stack.Screen name='Home' component={HomeScreen} />
+          <Stack.Screen name='Restaurant' component={RestaurantScreen} />
+          <Stack.Screen
+            name='PreparingOrder'
+            component={PreparingOrderScreen}
+            options={{
+              presentation: 'fullScreenModal'
+            }}
+          />
+          <Stack.Screen
+            name='Basket'
+            component={BasketScreen}
+            options={{
               presentation: 'modal'
             }}
-          >
-            <Stack.Screen name='Basket' component={BasketScreen} />
-          </Stack.Group>
+          />
+          <Stack.Screen
+            name='Delivery'
+            component={DeliveryScreen}
+            options={{
+              presentation: 'fullScreenModal'
+            }}
+          />
         </Stack.Navigator>
         <StatusBar />
       </Provider>

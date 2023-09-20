@@ -29,11 +29,12 @@ export const basketSlice = createSlice({
         console.warn('can not remove')
       }
       state.items = newBasket
-    }
+    },
+    resetBasketState: () => initialState
   }
 })
 
-export const { addToBasket, removeFromBasket } = basketSlice.actions
+export const { addToBasket, removeFromBasket, resetBasketState } = basketSlice.actions
 
 const basketReducer = basketSlice.reducer
 export default basketReducer
